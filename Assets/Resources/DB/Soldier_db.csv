@@ -1,0 +1,6 @@
+﻿id,name,rank,hp,damage,armor,attackspeed,movespeed,cooltime,deftype,atktype,damagedtype,atktypelv,level,exp,explain
+0,Dave,Normal,100,10,5,1,1,0,0,0,0,0,0,0,Kal의 시종으로 농사짓고 있다 Kal의 부름에 용병소로 가게되었다.
+1,Ron,Unique,100,10,5,1,1,0,0,0,0,0,0,0,전설의 용자 Kal의 아들이다.
+2,Kal,Legendary,100,10,5,1,1,0,0,0,0,0,0,0,대마왕을 무찌른 전설의 검사이다.
+3,trie,Normal,100,10,5,1,1,0,0,0,0,0,0,0,성실한 동네 청년이다. 취미로 활을 다룬다. 
+4,mari,Normal,100,10,5,1,1,0,0,0,0,0,0,0,모험에 관심이 많은 옆마을 처녀다. 이름있는 대장장이의 딸이다.  

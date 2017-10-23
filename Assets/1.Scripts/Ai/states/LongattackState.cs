@@ -19,9 +19,9 @@ public class LongattackState : FSMState
     //InitStateList();  여기선는 난수를 안쓸꺼니까 
     }
 
-    public override void Reason(Transform player, Transform my)
+    public override void Reason()
     {
-        float dis = Vector3.Distance(player.position, my.position);
+       // float dis = Vector3.Distance(player.position, my.position);
     
         //if (dis > MyMon.AttackDis && !MyMon.Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))   //거리가 멀면 추적
         //{
@@ -42,7 +42,7 @@ public class LongattackState : FSMState
     float tic = 0;
  
 
-    public override void Act(Transform player, Transform npc)
+    public override void Act()
     {
 
 

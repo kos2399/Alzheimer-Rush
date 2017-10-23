@@ -15,7 +15,7 @@ public class EscapeState : FSMState
     }
 
  
-    public override void Reason(Transform player, Transform my)
+    public override void Reason()
     {
        
     
@@ -27,7 +27,7 @@ public class EscapeState : FSMState
 
     float TestId = 0;
 
-    public override void Act(Transform player, Transform my)
+    public override void Act()
     {
 
         m_Mon.Anim.Play("Walk");
@@ -39,7 +39,7 @@ public class EscapeState : FSMState
             tic = 0;
             TestId++;
             Debug.Log("TestId::"+ TestId);
-            my.GetComponent<MonsterFSM>().PerformTransition(Transition.LookEnemy);
+            m_Mon.GetComponent<MonsterFSM>().PerformTransition(Transition.LookEnemy);
            
         }
 
@@ -57,7 +57,7 @@ public class EscapeState : FSMState
 
 
 
-            Vector2 ForwardVector = my.transform.up * 800 * m_Mon.m_ability.Movespeed*2 * Time.deltaTime;
+            Vector2 ForwardVector = m_Mon.transform.up * 800 * m_Mon.m_ability.Movespeed*2 * Time.deltaTime;
             m_Mon.MyRidbody.AddForce(ForwardVector);
       //  }
 

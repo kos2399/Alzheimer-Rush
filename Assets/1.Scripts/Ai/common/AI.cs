@@ -20,6 +20,13 @@ public abstract class AI : MonoBehaviour
     protected Transform[] ModelChildObj;
     protected float friction = 3;
 
+
+    public UnityEngine.AI.NavMeshAgent navMeshAgent;
+    public Transform TargetTrans;
+
+
+
+
     public bool iSNoneAttackTypeMonster = false;
 
     public bool IsSkill1Start = false;

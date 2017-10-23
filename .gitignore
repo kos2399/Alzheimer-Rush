@@ -40,7 +40,9 @@ ExportedObj/
 
 *.booproj
 
+*.keystore
 
+*.apk
 
 # ============ #
 

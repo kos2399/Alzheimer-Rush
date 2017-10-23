@@ -14,7 +14,7 @@ public class hittedState : FSMState
         //InitStateList();  여기선는 난수를 안쓸꺼니까 
     }
 
-    public override void Reason(Transform player, Transform my)
+    public override void Reason()
     {
 
 
@@ -22,7 +22,7 @@ public class hittedState : FSMState
     float tic = 0;
     float time = 1;
 
-    public override void Act(Transform player, Transform my)
+    public override void Act()
     {
         tic += Time.deltaTime;
         m_Mon.Anim.Play("Walk");

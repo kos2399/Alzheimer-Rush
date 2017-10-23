@@ -18,11 +18,11 @@ public class attackState : FSMState
     //InitStateList();  여기선는 난수를 안쓸꺼니까 
     }
 
-    public override void Reason(Transform player, Transform my)
+    public override void Reason()
     {
 
 
-        float dis = Vector3.Distance(player.position, my.position);
+       // float dis = Vector3.Distance(player.position, my.position);
      //   Debug.Log(AttackObj.activeSelf);
         //if (dis > MyMon.AttackDis&& !MyMon.Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))   //일정 거리 안에 들어가면 공격. 
         //{
@@ -31,7 +31,7 @@ public class attackState : FSMState
     }
 
 
-    public override void Act(Transform player, Transform npc)
+    public override void Act()
     {
         //  MyMon.MyRidbody.velocity = new Vector2(0, 0);
       //  Debug.Log("공격" + MyMon.Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"));
